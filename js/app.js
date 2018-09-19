@@ -88,13 +88,13 @@ var model = function()
                 var result = data.response.venue;
 
                 // to add likes and ratings to marker
-                marker.likes = result.hasOwnProperty('likes') ? result.likes.summary : '';
-                marker.rating = result.hasOwnProperty('rating') ? result.rating : '';
+               // marker.likes = result.hasOwnProperty('likes') ? result.likes.summary : '';
+               // marker.rating = result.hasOwnProperty('rating') ? result.rating : '';
             },
 
             // warn if there is error in recievng json
             error: function(e) {
-                self.errorDisplay("foursquare un");
+                self.errorDisplay("");
             }
         });
     };
@@ -172,7 +172,7 @@ var model = function()
 
         Likes = function() {
             if (self.currentLocation.likes === '' || self.currentLocation.likes === undefined) {
-                return "Likes not available for this location";
+                return "";
             } else {
                 return "Location has " + self.currentLocation.likes;
             }
@@ -180,7 +180,7 @@ var model = function()
         // function to show rating and if not then no rating to display
         Rating = function() {
             if (self.currentLocation.rating === '' || self.currentLocation.rating === undefined) {
-                return "NO ratings available";
+                return "";
             } else {
                 return "Location rating " + self.currentLocation.rating;
             }
