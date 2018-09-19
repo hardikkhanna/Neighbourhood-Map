@@ -1,11 +1,6 @@
 # Udacity Neighborhood Map Project
 
 This project is for Udacity Front-end Developer course. Its main purpose is for demonstrate MVC architecture and AJAX request.
-
-## Demo
-
-[This Link](http://suprinakaur.github.io/Neighbourhood-Map)
-
 ## How to install
 
 1. Clone or download this repostitory in to your device
