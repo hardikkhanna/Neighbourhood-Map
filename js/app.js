@@ -88,13 +88,13 @@ var model = function()
                 var result = data.response.venue;
 
                 // to add likes and ratings to marker
-               // marker.likes = result.hasOwnProperty('likes') ? result.likes.summary : '';
-               // marker.rating = result.hasOwnProperty('rating') ? result.rating : '';
+                marker.likes = result.hasOwnProperty('likes') ? result.likes.summary : '';
+                marker.rating = result.hasOwnProperty('rating') ? result.rating : '';
             },
 
             // warn if there is error in recievng json
             error: function(e) {
-                self.errorDisplay("");
+                self.errorDisplay("Foursquare not available");
             }
         });
     };
